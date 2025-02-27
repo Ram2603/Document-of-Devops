@@ -28,6 +28,8 @@ docker info : it provide information about docker client and docker server like 
 #to pull any images from docker daemon or docker hub we need to execute below command.
 docker pull centos : this will pull centos image from docker daemon because this image is already present on docker daemon.
 
+#tagging- docker tag  e143ab5e1ad4 docker26031997/ci-base-image:v1.1
+
 #5. pull any another image
 docker pull ubuntu
 
