@@ -5,6 +5,8 @@
 #usermod -aG docker ec2-user
 #docker version
 
+#docker pull centos ( to get image from dockerhub repo)
+
 #	Create image with this docker file
 docker build -t myimage  .
 
