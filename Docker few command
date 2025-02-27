@@ -2,7 +2,19 @@
 
 #docker push docker26031997/ci-base-image:v1.1
 
-#docker push docker26031997/ci-base-image:v1.1
+ less Dockerfile
+    8  docker build -t my1stimage .
+    9  chmod 777 var/run/docker.sock
+   10  chmod 777 /var/run/docker.sock
+   11  sudo chmod 777 /var/run/docker.sock
+   12  docker build -t my1stimage .
+   13  docker images
+   14  docker run -itd --name owncontainer my1stimage
+   15  docker ps
+   16  docker exec -it cdcd1fd7d24b /bin/bash
+   17  ls -lrt
+   18  docker images
+   19  docker push docker26031997/ci-base-image:v1.1
    20  docker login
    21  docker push docker26031997/ci-base-image:v1.1
    22  ls -lrt
@@ -18,5 +30,19 @@
    32  docker pull docker26031997/ci-base-image:v1.1
    33  docker images
    34  history
+   35  docker images
+   36  docker run -itd --name contnew docker26031997/ci-base-image
+   37  docker run -itd --name contnew docker26031997/ci-base-image:v1.1
+   38  docker ps
+   39  docker exec -it a20783bdf258 /bin/bash
+   40  top
+   41  aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 390844780898.dkr.ecr.ap-south-1.amazonaws.com
+   42  aws configure
+   43  aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 390844780898.dkr.ecr.ap-south-1.amazonaws.com
+   44  docker build -t ci-base-image .
+   45  docker tag ci-base-image:latest 390844780898.dkr.ecr.ap-south-1.amazonaws.com/ci-base-image:latest
+   46  docker push 390844780898.dkr.ecr.ap-south-1.amazonaws.com/ci-base-image:latest
 
-
+Aws configure
+AKIAVWABKCFRHDD6NL6A - Z
+88XVEQsIUKAO2QFjHjpRNRliES47+xsaF4Gfi3va - n
