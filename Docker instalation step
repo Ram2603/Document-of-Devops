@@ -12,7 +12,7 @@ docker build -t myimage  .
 
 #.	Create docker container with this image 
 fire below command
-docker run -itd - - name democont myimage
+docker run -itd --name democont myimage
 
 #.	Once you get container id you can get into the container by below command
 docker exec -it <container_id> /bin/bash
