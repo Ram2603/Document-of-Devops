@@ -21,6 +21,8 @@ docker info : it provide information about docker client and docker server like 
 
 #docker images : to check the docker images are present 
 
+#docker ps 
+
 #to pull any images from docker daemon or docker hub we need to execute below command.
 docker pull centos : this will pull centos image from docker daemon because this image is already present on docker daemon.
 
