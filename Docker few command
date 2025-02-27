@@ -1,0 +1,22 @@
+#docker login -  If receved erro related to passowd.
+
+#docker push docker26031997/ci-base-image:v1.1
+
+#docker push docker26031997/ci-base-image:v1.1
+   20  docker login
+   21  docker push docker26031997/ci-base-image:v1.1
+   22  ls -lrt
+   23  docker images
+   24  docker rmi centos/latest
+   25  docker rmi centos
+   26  docker rmi ubuntu
+   27  docker rmi my1stimage
+   28  docker rmi docker26031997/ci-base-image:v1.1
+   29  docker rmi docker26031997/ci-base-image:latest
+   30  docker images
+   31  docker ps
+   32  docker pull docker26031997/ci-base-image:v1.1
+   33  docker images
+   34  history
+
+
