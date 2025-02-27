@@ -4,3 +4,38 @@
 #chkconfig docker on
 #usermod -aG docker ec2-user
 #docker version
+
+#	Create image with this docker file
+docker build -t myimage  .
+
+#.	Create docker container with this image 
+fire below command
+docker run -itd - - name democont myimage
+
+#.	Once you get container id you can get into the container by below command
+docker exec -it <container_id> /bin/bash
+
+
+docker info : it provide information about docker client and docker server like version, how many containers, running, stopped, paused like that.
+#docker --version : check the docker version we installed
+
+#docker images : to check the docker images are present 
+
+#to pull any images from docker daemon or docker hub we need to execute below command.
+docker pull centos : this will pull centos image from docker daemon because this image is already present on docker daemon.
+
+#5. pull any another image
+docker pull ubuntu
+
+#How to create container with existing images.
+Command:
+docker run -itd –name helloc1 centos
+
+#how to check in which container are you in?
+command:- hostname
+
+
+
+
+
+
