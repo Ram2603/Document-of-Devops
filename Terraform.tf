@@ -73,7 +73,7 @@ resource "aws_vpc" "main" {
 =============
 LAB2
 =============
-main.tf
+provider.tf
 ======
 provider "aws" {
   region = var.aws_region
